@@ -1,4 +1,4 @@
-//let pokemonRepository = (function  () {
+let pokemonRepository = (function  () {
 
 let pokemonList=[
 {name: 'Bulbasaur', type:['grass','poison'], height:'2.04', weight:'15.2 Ibs', abilities:'overgrow',category:'seed'},
@@ -9,12 +9,34 @@ let pokemonList=[
 {name: "Snorlax", type:"normal", height:'6.11', weight:"1014.1 ", abilities:["thick fat","immunity"],category:"sleeping"}
 ];
 
-pokemonList.forEach(function(name){
+function getAll() {
+  return pokemonList;
+}
+
+function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+return {
+  getAll: getAll,
+  add: add
+
+  };
+})();
+
+pokemonRepository.getAll().forEach(function(name){
     document.write('<p>' + name.name + '</p>');
+    document.write('<p>' + name.type + '</p>');
+    document.write('<p>' + name.height + '</p>');
+    document.write('<p>' + name.weight + '</p>');
+    document.write('<p>' + name.abilities + '</p>');
+    document.write('<p>' + name.category + '</p><br>');
+
   });
 
-//printArrayExample(pokemonList);
-//printArrayExample(pokemonList2);
+
+
+
 
 /*let pokemonList2=[
 {name: 'Butterfree', type:['bug','flying'], height:'3.07', weight:'70.5 ', abilities:'compound eyes', category:'butterfly'},
@@ -23,28 +45,16 @@ pokemonList.forEach(function(name){
 {name: "Snorlax", type:"normal", height:'6.11', weight:"1014.1 ", abilities:["thick fat","immunity"],category:"sleeping"}
 ];*/
 
-/*function add(pokemon) {
-    pokemonList.push(pokemon);
-  }
-
-  function getAll() {
-    return pokemonList;
-  }
-
-  return {
-    add: add,
-    getAll: getAll
-  };
-})();
-document.write(pokemonRepository.getAll()); // []
-
-
-/*pokemonRepository.add({name: 'Pikachu' });
-document.write(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
+//printArrayExample(pokemonList);
+//printArrayExample(pokemonList2);
 
 
 
-let name = prompt('Please enter your name!');
+
+
+
+
+/*let name = prompt('Please enter your name!');
 document.write(name);
 
 let isAccepted = confirm('Do you accept?');
@@ -55,7 +65,7 @@ let array = [1,2,3,4];
 
 array.forEach(function(item,index,array) {
 document.write("item: " + item + " at index: " + index + " in the array: " + array);
-})
+})*/
 /*function printArrayDetails(pokemonList){
 for (let i = 0; i < pokemonList.length; i++) {
 
