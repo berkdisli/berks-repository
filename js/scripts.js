@@ -22,7 +22,13 @@ function add(pokemon) {
           else {
             document.write('Pokemon is wrong')
         }
-    }
+
+
+    /*  let pokemonType = [];
+      Object.keys(pokemon.type).forEach(key => {
+      pokemonType.push(pokemon.type[key].type.name); });*/
+      }
+
 
 
 
