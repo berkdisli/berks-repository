@@ -14,14 +14,23 @@ function getAll() {
 }
 
 function add(pokemon) {
-    pokemonList.push(pokemon);
-  }
+          if (
+            typeof pokemon === 'object' && 'name' && 'type' in pokemon
+        ) {
+            pokemonList.push(pokemon)
+          }
+          else {
+            document.write('Pokemon is wrong')
+        }
+    }
+
+
 
 return {
   getAll: getAll,
   add: add
+};
 
-  };
 })();
 
 pokemonRepository.getAll().forEach(function(name){
@@ -33,6 +42,7 @@ pokemonRepository.getAll().forEach(function(name){
     document.write('<p>' + name.category + '</p><br>');
 
   });
+
 
 
 
