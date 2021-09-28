@@ -9,6 +9,7 @@ let pokemonList=[
 {name: "Snorlax", type:"normal", height:'6.11', weight:"1014.1 ", abilities:["thick fat","immunity"],category:"sleeping"}
 ];
 
+ // getting all pokemon objects from pokemonList
 function getAll() {
   return pokemonList;
 }
@@ -28,24 +29,41 @@ function add(pokemon) {
       Object.keys(pokemon.type).forEach(key => {
       pokemonType.push(pokemon.type[key].type.name); });*/
       }
+function addListItem(pokemon) {
+  let listPokemon = document.querySelector('.pokemon-list');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = pokemon.name;
+  button.classList.add('button-class');
+  listItem.appendChild(button);
+  listPokemon.appendChild(listItem);
 
+  //click on pokemon button for details in the console
+  button.addEventListener('click', function (event) {
+    showDetails(pokemon);
+  });
+}
+
+function showDetails(pokemon) {
+console.log(pokemon);
+
+}
 
 
 
 return {
   getAll: getAll,
-  add: add
+  add: add,
+  addListItem: addListItem,
+  showDetails: showDetails
 };
 
 })();
 
-pokemonRepository.getAll().forEach(function(name){
-    document.write('<p>' + name.name + '</p>');
-    document.write('<p>' + name.type + '</p>');
-    document.write('<p>' + name.height + '</p>');
-    document.write('<p>' + name.weight + '</p>');
-    document.write('<p>' + name.abilities + '</p>');
-    document.write('<p>' + name.category + '</p><br>');
+
+
+pokemonRepository.getAll().forEach(function(pokemon){
+  pokemonRepository.addListItem(pokemon) ;
 
   });
 
