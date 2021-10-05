@@ -1,23 +1,97 @@
 body {
     background-color: #DCDCDC;
-    font-family:inherit;
-    font-size: 16px;
-    font-weight: 500;
+    font-family:sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     color:black;
+    box-sizing: border-box;
+    margin: 0;
 
     }
 
+    button:hover, button:focus, .button:hover, .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+
+  }
+
 .button-class{
   font-family: inherit;
-  font-weight: bolder;
+  font-size: inherit;
+  font-weight: none;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #dc143c;
   border: none;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 16px 32px;
-  text-align:center;
-  border: 2px solid #000000;
+  padding: .375rem .75rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
   font-size: 16px;
   display: inline-block;
+  width: 200px;
+  height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.5s opacity;
+
+
+}
+
+
+
+.pokedex {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+.pokemon-list{
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+.page-header{
+
+  display: flex;
+  width: 110%;
+  padding: 20px;
+  color: #F0F0f0;
+  background-color: #343a40;
+  box-shadow: 1px 5px 5px #2b2b2b	;
+  position: sticky;
+  top:0;
+  height: 40px;
+}
+
+.main-navigation{
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.searching{
+      display: block;
+      width: 38;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 350;
+      line-height: 1.5;
+      color: #495057;#343a40
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border: 1px solid #343a40;
+      border-radius: 5px;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      margin:auto;
+      margin-top: 20px;
 }
