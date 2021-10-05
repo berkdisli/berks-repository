@@ -168,15 +168,16 @@ let pokemonRepository = (function(){
         //adding pokemon front image
         let imageElement = document.createElement('img');
         imageElement.setAttribute('src', pokemon.imageUrl);
-        imageElement.setAttribute('alt','Front view of' + pokemon.name);
+        imageElement.setAttribute('alt', pokemon.name);
 
         modal.appendChild(closeButtonElement);
         modal.appendChild(imageElement);
         modal.appendChild(titleElement);
         modal.appendChild(contentElement);
         modalContainer.appendChild(modal);
+        modalBody.appendChild(modalContainer);
 
-        
+
     }
 
     let dialogPromiseReject;
