@@ -1,10 +1,9 @@
+//wrapping pokemonList inside pokemonRepository to avoid global state (IIFE)
 let pokemonRepository = (function(){
+    //The Pokemon collection
     let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
-    let modalContainer = document.querySelector('#modal-container');
-    modalContainer.classList.add('is-visible');
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=48';
 
-//get element by ID
     let searchBar = document.getElementById('searchbar');
 
     searchBar.addEventListener('input', function () {
@@ -21,9 +20,10 @@ let pokemonRepository = (function(){
         });
 
     });
+
     //add a single pokemon to the pokemonList
     function add(pokemon){
-        // new pokemon has these properties
+        //make sure the new pokemon has these properties
         if (
             typeof pokemon === "object" &&
             "name" in pokemon
@@ -40,18 +40,28 @@ let pokemonRepository = (function(){
     }
 
     function addListItem(pokemon){
-        //selecting the list
+        //selecting the unordered list
         let myList = document.querySelector('.pokemon-list');
-        //creating list
+
+        //creating bullet list
         let listItem = document.createElement('li');
+
         //creating a button
         let button = document.createElement('button');
+
+        //write the pokemon's name on the button
         button.innerText = pokemon.name;
-        //creating class for the button
+
+        //creating class for the list as 'pokemon-panel'
         button.classList.add('button-class');
+
+        //append the button on the bullet list
         listItem.appendChild(button);
+
+        //append the bullet list to unordered list
         myList.appendChild(listItem);
-        //add click event to button to display pokemon details on console
+
+        //add click event to pokemon panel to display pokemon object on console log
         button.addEventListener('click', function(event){
             showDetails(pokemon);
         });
@@ -65,12 +75,12 @@ let pokemonRepository = (function(){
         });
     }
 
-    //0.75 before hidden
+    //turn the vibility of loading image back to hidden, add 0.5s before hidden
     function hideLoadingImage() {
         let loadImg = document.querySelector('#loading-img');
         setTimeout(function(){
             loadImg.style.visibility = 'hidden';
-        }, 150);
+        }, 100);
 
     }
 
@@ -123,14 +133,17 @@ let pokemonRepository = (function(){
         });
     }
 
+    let modalContainer = document.querySelector('#modal-container');
 
     //showing modal
     function showModal(pokemon) {
+        let modalContainer = document.querySelector('#modal-container');
 
+        //clear all existing modal content
+        modalContainer.innerHTML = '';
 
-        //creating the modal as div
+        //creating the modal
         let modal = document.createElement('div');
-        //add class to div : modal
         modal.classList.add('modal');
 
         //add the new modal content
@@ -161,23 +174,23 @@ let pokemonRepository = (function(){
 
         //write the details of selected pokemon onto the modal
         contentElement.innerText = 'Height: ' + pokeHeight + ' m '+ '\r\n'
-                                    + 'Weight: ' + pokeWeight + ' Ibs '+ '\r\n'
+                                    + 'Weight: ' + pokeWeight + ' kg '+ '\r\n'
                                     + 'Types: ' + pokeTypes + '\r\n'
                                     + 'Abilities: ' + pokeAbilities;
 
         //adding pokemon front image
         let imageElement = document.createElement('img');
         imageElement.setAttribute('src', pokemon.imageUrl);
-        imageElement.setAttribute('alt', pokemon.name);
+        imageElement.setAttribute('alt','Front view of' + pokemon.name);
 
         modal.appendChild(closeButtonElement);
         modal.appendChild(imageElement);
         modal.appendChild(titleElement);
         modal.appendChild(contentElement);
         modalContainer.appendChild(modal);
-        modalBody.appendChild(modalContainer);
 
-
+        //showing the modal
+        modalContainer.classList.add('is-visible');
     }
 
     let dialogPromiseReject;
@@ -192,8 +205,6 @@ let pokemonRepository = (function(){
         }
     }
 
-
-
     //hiding modal when 'Esc' button is pressed down
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modalContainer.classList. contains('is-visible')) {
@@ -205,6 +216,7 @@ let pokemonRepository = (function(){
     modalContainer.addEventListener('click', (e) => {
         let target = e.target;
         if (target === modalContainer) {
+            hideModal();
         }
     });
 
