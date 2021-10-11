@@ -2,7 +2,7 @@
 let pokemonRepository = (function(){
     //The Pokemon collection
     let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=48';
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
 
     let searchBar = document.getElementById('searchbar');
 
@@ -44,7 +44,7 @@ let pokemonRepository = (function(){
         let myList = document.querySelector('.pokemon-list');
 
         //creating bullet list
-        let listItem = document.createElement('li');
+        // let listItem = document.createElement('li');
 
         //creating a button
         let button = document.createElement('button');
@@ -56,10 +56,10 @@ let pokemonRepository = (function(){
         button.classList.add('button-class');
 
         //append the button on the bullet list
-        listItem.appendChild(button);
+        myList.appendChild(button);
 
         //append the bullet list to unordered list
-        myList.appendChild(listItem);
+        // myList.appendChild(listItem);
 
         //add click event to pokemon panel to display pokemon object on console log
         button.addEventListener('click', function(event){

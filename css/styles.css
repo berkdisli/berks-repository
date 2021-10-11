@@ -71,7 +71,7 @@ body {
       font-size: 1rem;
       font-weight: 350;
       line-height: 1.5;
-      color: #495057;#343a40
+      color: #495057;
       background-color: #FFFFFF;
       background-clip: padding-box;
       border: 1px solid #343a40;
@@ -91,6 +91,8 @@ body {
   columns: 5;
   -webkit-columns: 1;
   -moz-columns: 2;
+  display: grid;
+  justify-content: center;
 
 }
 
@@ -165,6 +167,7 @@ body {
     border: 1px solid;
     box-shadow: 1px 5px 5px #2b2b2b	;
     background: rgba(255, 255, 255, 0.8);
+
 
 
 }
