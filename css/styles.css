@@ -88,11 +88,23 @@ body {
 }
 
 .pokemon-list{
-  columns: 5;
-  -webkit-columns: 1;
-  -moz-columns: 2;
+  columns: 1;
+  -webkit-columns: 5;
+  -moz-columns: 5;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
   justify-content: center;
+
+}
+@media all and (max-width: 500px) {
+  .pokemon-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+          grid-gap: 5px;
+
+  }
 
 }
 
