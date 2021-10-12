@@ -52,7 +52,7 @@ let pokemonRepository = (function(){
         //write the pokemon's name on the button
         button.innerText = pokemon.name;
 
-        //creating class for the list as 'pokemon-panel'
+        //creating class for the list as 'button-class'
         button.classList.add('button-class');
 
         //append the button on the bullet list
