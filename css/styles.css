@@ -38,9 +38,10 @@ body {
   -webkit-transition: 0.2s opacity;
   transition: 0.5s opacity;
   transition-duration: 0.2s;
-}
 
+}
 .page-header{
+
   display: flex;
   width: 100%;
   padding: 40px;
