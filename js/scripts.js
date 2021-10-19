@@ -179,6 +179,12 @@ let pokemonRepository = (function(){
       }
     });
 
+    // function fetchPokemon() {
+    // fetch('https://pokeapi.co/api/v2/pokemon/?limit=151)
+    // .then(response =>.json())
+    // .then(allpokemon =>console.log(allpokemon))
+    // }
+
     return {
         getAll: getAll,
         add: add,
@@ -187,7 +193,7 @@ let pokemonRepository = (function(){
         loadDetails: loadDetails,
         showDetails: showDetails,
         showModal: showModal,
-        hideModal:hideModal
+        hideModal:hideModal,
     };
 
 })();
