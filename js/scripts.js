@@ -2,7 +2,7 @@
 let pokemonRepository = (function(){
     //The Pokemon collection
     let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=840';
 
     let searchBar = document.getElementById('searchbar');
 
@@ -48,7 +48,7 @@ let pokemonRepository = (function(){
         button.innerText = pokemon.name;
 
         //creating class for the list as 'button-class'
-        button.classList.add('button-class','btn', 'btn-info', 'btn-block');      //creating attributes for button
+        button.classList.add('button-class','btn', 'btn-warning', 'btn-block');      //creating attributes for button
         //creating attributes for button
         button.setAttribute('data-target', '#exampleModal');
         button.setAttribute('data-toggle', 'modal');
@@ -64,22 +64,7 @@ let pokemonRepository = (function(){
         myList.appendChild(listItem);
 }
 
-    //activating the loading image
-    // function showLoadingImage() {
-    //     let loadImg = document.querySelector('#loading-img');
-    //     window.addEventListener('load',function(){
-    //         loadImg.style.visibility = 'visible';
-    //     });
-    // }
 
-    //turn the vibility of loading image back to hidden, add 0.5s before hidden
-    // function hideLoadingImage() {
-    //     let loadImg = document.querySelector('#loading-img');
-    //     setTimeout(function(){
-    //         loadImg.style.visibility = 'hidden';
-    //     }, 100);
-    //
-    // }
 
     //load the list of Pokémon
     function loadList() {
@@ -201,8 +186,6 @@ let pokemonRepository = (function(){
         loadList: loadList,
         loadDetails: loadDetails,
         showDetails: showDetails,
-        // showLoadingImage: showLoadingImage,
-        // hideLoadingImage: hideLoadingImage,
         showModal: showModal,
         hideModal:hideModal
     };

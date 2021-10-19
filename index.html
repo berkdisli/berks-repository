@@ -4,14 +4,15 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/favicon-32x32.png">
+        <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
           <title>Pokédex</title>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <link rel="stylesheet" type="text/css" href="css/styles.css">
+          <link rel="stylesheet" type="text/css" href="dist/styles.css">
 
   </head>
 
-<body>
-  <header class="page-header" style= "background: url(https://www.geco-cards.de/bilder/kk_dropper_uploads/data-original.jpg);">
+  <body style="background-color: rgb(246, 240, 215);">
+  <header class="page-header" style= "background: url(http://nintendotoday.com/wp-content/uploads/2018/01/pokemon-poster.jpg);">
 
       <nav class="navbar navbar-expand-lg " id="top-page">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:flex-end">
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Pokemon search" aria-label="Search">
+          <input class="form-control mr-sm-2" id="searchbar" type="search" placeholder="Pokemon search..." aria-label="Search">
         </form>
       </div>
     </nav>
@@ -30,10 +31,11 @@
      <span class="sr-only">Loading...</span>
      </div> -->
      <!-- <a class="navbar-brand" id="pokedex" href="#pokedex">Pokédex</a> -->
-     <br><h1 class = 'pokedex' > Pokédex
+     <style>
+      @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+    </style>
+     <br><h1 style="color:#990000" class  = 'pokedex' > Pokédex
        <img src="img/pokedexfav.png" class="pokedexpic" alt="pic of Pokedex"></h1>
-
-
 
      <div class="container-fluid" style="margin-top: 30px">
        <ul class="pokemon-list unstyled-list row justify-content-center"></ul>
@@ -50,14 +52,18 @@
                <span aria-hidden="true">&times;</span>
              </button>
            </div>
-           <div class="modal-body"></div>
+           <div class="modal-body">
+             <div class="spinner-border text-danger" role="status">
+               <span class="sr-only">Loading...</span>
+             </div>
+          </div>
          </div>
        </div>
      </div>
 
 
   <div class="d-flex">
-      <a class=" btn btn-sm btn-danger" href="#top-page" >Move back to Top</a>
+      <a class="  btn btn-sm btn-danger" href="#top-page" id=moveback >Move back to Top</a>
   </div>
 <strong>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -65,7 +71,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch.umd.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="dist/scripts.js"></script>
 </strong>
 
 
