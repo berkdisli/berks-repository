@@ -3,154 +3,147 @@
 }
 
 body {
-    background-color: #F0F8FF;
-    font-family:sans-serif;
+    background-color: #f0f8ff;
+    font-family: sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color:black;
-    box-sizing:border-box;
-    padding : var(--padding);
+    color: black;
+    box-sizing: border-box;
+    padding: var(--padding);
     margin: 0;
-
 }
 
-
-.button-class{
-  font-family: papyrus;
-  font-weight:bold;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #F5F5F5;;
-  border: none;
-  color: #000000;
-  text-decoration: none;
-  padding: .375rem .75rem;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-size: 16px;
-  display: inline-block;
-  width: 200px;
-  height: 40px;
-  text-transform: capitalize;
-  margin-bottom: 2px;
-  margin-top: 2px;
-  /* margin-left: 50px; */
-  /* margin-right: 5px; */
-  -webkit-transition: 0.2s opacity;
-  transition: 0.5s opacity;
-  transition-duration: 0.2s;
-
-}
-.page-header{
-
-  display: flex;
-  width: 100%;
-  padding: 40px;
-  color: #F0F0f0;
-  background-color: #343a40;
-  box-shadow: 1px 5px 5px #2b2b2b	;
-  position: top;
-  position: sticky;
-  height: 125px;
+.button-class {
+    font-family: papyrus;
+    font-weight: bold;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #f5f5f5;
+    border: none;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    /* margin-left: 50px; */
+    /* margin-right: 5px; */
+    -webkit-transition: 0.2s opacity;
+    transition: 0.5s opacity;
+    transition-duration: 0.2s;
 }
 
-.form-control{
-     width: 28;
-     justify-content: center;
-      padding: .375rem .75rem;
-      font-size: 1rem;
-      font-weight: 350;
-      line-height: 1.5;
-      color: #495057;
-      background-color: #FFFFFF;
-      background-clip: padding-box;
-      border: 1px solid #343a40;
-      border-radius: 5px;
-      /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
-      margin:0;
-      margin-top: 40px;
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    color: #f0f0f0;
+    background-color: #343a40;
+    box-shadow: 1px 5px 5px #2b2b2b;
+    position: top;
+    position: sticky;
+    height: 125px;
+}
+
+.form-control {
+    width: 28;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    margin: 0;
+    margin-top: 40px;
+}
+
+.pokedex {
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+    font-family: Pokemon Solid;
+}
+
+style {
+    font-family: Pokemon Solid;
 }
 
 @media all and (max-width: 500px) {
-  #searchbar {
-        justify-content: center;
-        }
-}
-
-
-.pokedex{
-  text-align:center;
-  font-size: 50px;
-  justify-content: center;
-  font-family:Pokemon Solid;
-
-}
-
-style{ font-family: Pokemon Solid;}
-
-@media all and (max-width: 500px) {
-  .pokemon-list {
-    -ms-grid-columns: 2fr;
+    .pokemon-list {
+        -ms-grid-columns: 2fr;
         grid-template-columns: 2fr;
         justify-content: center;
-          grid-gap: 5px;
-          margin-left: 51px;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-        }
+        grid-gap: 5px;
+        margin-left: 51px;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .btn {
-  height: 50px;
-  font-family: papyrus;
-  font-weight:bold;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #F5F5F5;;
-  border: none;
-  color: #000000;
-  text-decoration: none;
-  padding: .375rem .75rem;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-size: 16px;
-  display: inline-block;
-  width: 200px;
-  height: 40px;
-  text-transform: capitalize;
-  margin-bottom: 2px;
-  margin-top: 2px;
-  /* margin-left: 50px; */
-  /* margin-right: 5px; */
-  -webkit-transition: 0.2s opacity;
-  transition: 0.5s opacity;
-  transition-duration: 0.2s;
+    height: 50px;
+    font-family: papyrus;
+    font-weight: bold;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: rgba(255, 255, 255, 0.842);
+    border: none;
+    color: rgb(37, 35, 35);
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    /* margin-left: 50px; */
+    /* margin-right: 5px; */
+    -webkit-transition: 0.2s opacity;
+    transition: 0.5s opacity;
+    transition-duration: 0.2s;
 }
-.modal-header{
-  text-transform: capitalize;
 
+.modal-header {
+    text-transform: capitalize;
+    background-color: rgba(214, 129, 140, 0.952);
+    color: rgb(254, 255, 254);
+    font-family: Pokemon Solid;
 }
 
 .group-list-item {
-  margin: 2px;
+    margin: 2px;
 }
 
-.modal-content{
-  opacity: 1,0;
-  border: 1px solid;
-  box-shadow: 1px 5px 5px #2b2b2b	;
-  background: rgba(255, 255, 255, 0.8);
+.modal-content {
+    opacity: 1, 0;
+    border: 1px solid;
+    box-shadow: 1px 5px 5px #2b2b2b;
+    background: rgba(255, 255, 255, 0.8);
 }
-
 
 #moveback {
-  width: 120px;
-  height: 45px;
-  font-size: 12px;
-  background-color: rgb(239, 138, 126);
-  margin-left: 5px;
-  color: #FFFFFF;
+    width: 120px;
+    height: 45px;
+    font-size: 12px;
+    background-color: rgba(219, 112, 80, 0.911);
+    margin-left: 5px;
+    color: #ffffff;
 }
