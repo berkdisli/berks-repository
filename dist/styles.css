@@ -67,11 +67,11 @@ body {
     text-align: center;
     font-size: 50px;
     justify-content: center;
-    font-family: Pokemon Solid;
+    font-family: Pokemon Solid
 }
 
 style {
-    font-family: Pokemon Solid;
+    font-family: Pokemon Solid
 }
 
 @media all and (max-width:500px) {
