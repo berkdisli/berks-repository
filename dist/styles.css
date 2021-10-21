@@ -44,7 +44,7 @@ body {
     box-shadow: 1px 5px 5px #2b2b2b;
     position: top;
     position: sticky;
-    height: 125px
+    height: 125px;
 }
 
 .form-control {
@@ -83,12 +83,12 @@ style {
         margin-left: 51px;
         columns: 2;
         -webkit-columns: 2;
-        -moz-columns: 2
+        -moz-columns: 2;
     }
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 .btn {
@@ -111,7 +111,7 @@ ul {
     margin-top: 2px;
     -webkit-transition: .2s opacity;
     transition: .5s opacity;
-    transition-duration: .2s
+    transition-duration: .2s;
 }
 
 .modal-header {
@@ -122,7 +122,7 @@ ul {
 }
 
 .group-list-item {
-    margin: 2px
+    margin: 2px;
 }
 
 .modal-content {
