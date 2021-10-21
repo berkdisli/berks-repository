@@ -118,7 +118,7 @@ ul {
     text-transform: capitalize;
     background-color: rgba(214, 129, 140, .952);
     color: #fefffe;
-    font-family: Pokemon Solid
+    font-family: Pokemon Solid;
 }
 
 .group-list-item {
@@ -129,7 +129,7 @@ ul {
     opacity: 1, 0;
     border: 1px solid;
     box-shadow: 1px 5px 5px #2b2b2b;
-    background: rgba(255, 255, 255, .8)
+    background: rgba(255, 255, 255, .8);
 }
 
 #moveback {
