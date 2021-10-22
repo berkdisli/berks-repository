@@ -44,7 +44,7 @@ body {
     box-shadow: 1px 5px 5px #2b2b2b;
     position: top;
     position: sticky;
-    height: 125px;
+    height: 125px
 }
 
 .form-control {
@@ -67,11 +67,11 @@ body {
     text-align: center;
     font-size: 50px;
     justify-content: center;
-    font-family: Pokemon Solid;
+    font-family: Pokemon Solid
 }
 
 style {
-    font-family: Pokemon Solid;
+    font-family: Pokemon Solid
 }
 
 @media all and (max-width:500px) {
@@ -83,12 +83,12 @@ style {
         margin-left: 51px;
         columns: 2;
         -webkit-columns: 2;
-        -moz-columns: 2;
+        -moz-columns: 2
     }
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none
 }
 
 .btn {
@@ -111,18 +111,18 @@ ul {
     margin-top: 2px;
     -webkit-transition: .2s opacity;
     transition: .5s opacity;
-    transition-duration: .2s;
+    transition-duration: .2s
 }
 
 .modal-header {
     text-transform: capitalize;
     background-color: rgba(214, 129, 140, .952);
     color: #fefffe;
-    font-family: Pokemon Solid;
+    font-family: Pokemon Solid
 }
 
 .group-list-item {
-    margin: 2px;
+    margin: 2px
 }
 
 .modal-content {
@@ -131,7 +131,7 @@ ul {
     box-shadow: 1px 5px 5px #2b2b2b;
     background: rgba(255, 255, 255, .8);
     font-family: Microsoft Himalaya;
-    font-size: 22px;
+    font-size: 22px
 }
 
 #moveback {
@@ -141,4 +141,8 @@ ul {
     background-color: rgba(219, 112, 80, .911);
     margin-left: 5px;
     color: #fff
+}
+
+h1 {
+    font-family: Pokemon Solid
 }

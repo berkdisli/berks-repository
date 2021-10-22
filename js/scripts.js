@@ -50,7 +50,7 @@ const pokemonRepository = (function() {
         //creating class for the list as 'button-class'
         button.classList.add("button-class", "btn", "btn-warning", "btn-block"); //creating attributes for button
         //creating attributes for button
-        button.setAttribute("data-target", "#exampleModal");
+        button.setAttribute("data-target", "#pokemonModal");
         button.setAttribute("data-toggle", "modal");
 
         button.addEventListener("click", function() {
@@ -114,7 +114,7 @@ const pokemonRepository = (function() {
     }
 
     //showing modal
-    let modalContainer = document.querySelector("#exampleModal");
+    let modalContainer = document.querySelector("#pokemonModal");
 
     function showModal(pokemon) {
         let modalTitle = $(".modal-title");
