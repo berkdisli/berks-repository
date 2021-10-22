@@ -131,11 +131,7 @@ ul {
     box-shadow: 1px 5px 5px #2b2b2b;
     background: rgba(255, 255, 255, .8);
     font-family: Microsoft Himalaya;
-<<<<<<< HEAD
     font-size: 22px
-=======
-    font-size: 22px;
->>>>>>> gt-pages
 }
 
 #moveback {
@@ -148,5 +144,5 @@ ul {
 }
 
 h1 {
-    font-family: Pokemon Solid
+    font-family: Pokemon Solid;
 }
