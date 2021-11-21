@@ -1,4 +1,5 @@
 I)Topic: Pokédex 
+
 II)User Goals: A digital encyclopedia, which displays the original Pokémons with the limit I set. Within the Pokédex , each Pokémon should have basic data such as height, weight, types, abilities and their proper images.
 
 III)Key Features:
