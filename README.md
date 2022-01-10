@@ -4,9 +4,9 @@ II)User Goals: A digital encyclopedia, which displays the original Pokémons wit
 
 III)Key Features:
 
-Load data from an outside source (API)
-View a list of items
-On user action, view details for that item
+Load data from an outside source (API)  
+View a list of items  
+On user action, view details for that item  
 
 Requirements:
 
