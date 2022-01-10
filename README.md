@@ -10,10 +10,8 @@ On user action, view details for that item
 
 Requirements:
 
-The app must load data from an external API.
-
-The app must present a list of items stored from that API after the page is loaded.
-
+The app must load data from an external API.  
+The app must present a list of items stored from that API after the page is loaded. 
 The app must enable the viewing of more details for a certain Pokemon on demand, such as when clicking on a list item.
 
 The app must have CSS styling.
